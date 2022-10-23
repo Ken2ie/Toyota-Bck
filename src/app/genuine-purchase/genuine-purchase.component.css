@@ -1,0 +1,379 @@
+/* Task Bar Resusable */
+
+
+.taskbar{
+    position: fixed;
+    /* z-index: 1; */
+    width: 250px;
+    height: 70px;
+    max-height: 50px;
+    min-height: 60px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    top: 5%;
+    right: -40%;
+    border-left: 7px solid #EB0A1E;
+    transition: 0.4s all ease;
+}
+
+.task-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-container a img{
+    filter: invert(100%) sepia(4%) saturate(14%) hue-rotate(59deg) brightness(103%) contrast(106%);
+    margin: 0 10px;
+}
+.task-container a img:hover{
+    filter: invert(0%) sepia(20%) saturate(100%) hue-rotate(5deg) brightness(200%) contrast(06%);
+    transition: 0.2s all ease;
+}
+.task-container i{
+    margin: 0 10px;
+    color: white;
+    font-size: 2.5rem;
+    transition: 0.2s all ease;
+}
+.task-container i:hover{
+    color: #EB0A1E;
+    transition: 0.2s all ease;
+}
+
+#support{
+    width: 35px;
+    filter: invert(100%) sepia(4%) saturate(14%) hue-rotate(59deg) brightness(103%) contrast(106%);
+}
+
+#steer{
+    width: 35px;
+}
+
+.taskbar_change{
+    position: fixed;
+    z-index: 5;
+    /* background-color: #009451; */
+    /* height: 20vh; */
+    top: 5%;
+    right: 0;
+    transition: 0.4s all ease;
+}
+
+/* New Models */
+.new-models{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.section-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    margin-top: 10vh;
+}
+
+.new-head h2{
+  font-size: 3rem;
+}
+
+.new{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+.more-button{
+    margin: 20px 0;
+}
+
+.more-button a{
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    font-weight: lighter; 
+    margin-right: 10px;
+}
+
+.more-button a:hover{
+    background-color: #EB0A1E;
+    transition: 0.4s all ease;
+}
+
+.more-button span{
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    height: 70vh;
+    margin: 30px 0;
+}
+
+.carOne{
+    background-image: url(https://www.motorbiscuit.com/wp-content/uploads/2021/11/Drivers-side-rear-angle-view-of-2022-Toyota-RAV4-XSE-with-Cavalry-Blue-color-option.jpg);
+    background-repeat: no-repeat;
+    background-size:  cover;
+    background-position: center;
+    /* background-color: #EB0A1E; */
+    padding: 1rem;
+}
+.carTwo{
+    background-image: url(https://www.motorbiscuit.com/wp-content/uploads/2021/11/Black-wheel-on-Cavalry-Blue-2022-Toyota-RAV4-XSE.jpg);
+    background-repeat: no-repeat;
+    background-size:  cover;
+    background-position: center;
+    /* background-color: #EB0A1E; */
+    /* padding: 1rem; */
+}
+.carThree{
+    background-image: url(https://www.motorbiscuit.com/wp-content/uploads/2021/11/Steering-wheel-touchscreen-and-front-seats-in-2022-Toyota-RAV4-SE-Hybrid.jpg);
+    background-repeat: no-repeat;
+    background-size:  cover;
+    background-position: center;
+    /* background-color: #EB0A1E; */
+    /* padding: 1rem; */
+}
+
+.carTwo span:has(span){
+    color: white;
+}
+
+
+
+/* .three{
+   display: block;
+} */
+
+.span{
+    grid-row-start: span 2;
+    margin-right: 20px;
+    /* margin-left: -9.7rem; */
+}
+
+/* .span span{
+    margin-left: 139px;
+} */
+
+.one{
+    margin-bottom: 40px;
+}
+
+.three {
+    position: relative;
+}
+
+.three span {
+    position: absolute;
+    padding: 1rem;
+    bottom: 0;
+    left: 0;
+}
+
+.three span h2{
+    padding: 0.2rem;
+    width: 10rem;
+    background-color: #EB0A1E;
+    color: white;
+}
+.three span p{
+    backdrop-filter: blur(25px);
+    background-color: #ffffff22;
+    /* border-radius: 2px; */
+    padding: 0.3rem;
+    color: black;
+}
+
+
+
+@media  screen and (max-width: 500px) {
+
+    .new-models{
+        height: auto;
+    }
+
+     .new-head h2{
+        font-size: 2rem;
+     }
+
+     .grid{
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0;
+        height: auto;
+        /* margin-bottom: 40px; */
+     }
+
+     .container{
+        padding: 7rem;
+     }
+
+     .span{
+        margin: 0;
+        padding: 0;
+        grid-row-start: none;
+     }
+
+     .span span p{
+        color: white;
+     }
+
+     .carOne{
+        background-image: url(https://www.motorbiscuit.com/wp-content/uploads/2021/11/Black-wheel-on-Cavalry-Blue-2022-Toyota-RAV4-XSE.jpg);
+        background-repeat: no-repeat;
+        background-size:  cover;
+        background-position: center;
+        /* background-color: #EB0A1E; */
+        padding: 7rem;
+        margin-bottom: 40px;
+     }
+
+     .carOne span{
+        color: white;
+     }
+
+     .more-button{
+        margin: 0;
+     }
+
+     .taskbar{
+        width: 100%;
+        height: auto;
+        max-height: auto;
+        right: -100%;
+        top: 0;
+        /* min-height: 25vh; */
+        border: 0;
+     }
+
+     .taskbar_change{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        right: 0;
+        bottom: auto;
+        top: 0;
+     }
+
+     /* .task-container{
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     } */
+
+     .task-container a{
+        margin: 5px 0;
+     }
+
+     .task-container a i:hover{
+         color: #EB0A1E;
+     }
+}
+
+@media  screen and (min-width: 540px) and (max-width: 1080px) {
+
+    .new-models{
+        height: 140vh;
+    }
+
+     .new-head h2{
+        font-size: 2.5rem;
+        margin: 20px 0;
+     }
+
+     .grid{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        height: auto;
+     }
+
+     .container{
+        padding: 7rem;
+     }
+
+     .span{
+        margin: 0;
+        padding: 0;
+        grid-row-start: none;
+     }
+
+     .span span p{
+        color: white;
+     }
+
+     .carOne{
+        background-image: url(https://www.motorbiscuit.com/wp-content/uploads/2021/11/Black-wheel-on-Cavalry-Blue-2022-Toyota-RAV4-XSE.jpg);
+        background-repeat: no-repeat;
+        background-size:  cover;
+        background-position: center;
+        /* background-color: #EB0A1E; */
+        padding: 7rem;
+        margin-bottom: 40px;
+     }
+
+     .carOne span{
+        color: white;
+     }
+
+     .more-button{
+        margin: 50px 0;
+     }
+
+     .taskbar{
+        width: 100%;
+        height: auto;
+        max-height: auto;
+        /* right: 0; */
+        top: 0;
+        /* min-height: 25vh; */
+        border: 0;
+     }
+
+     .taskbar_change{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        right: 0;
+        bottom: auto;
+        top: 0;
+        border-bottom: 5px solid #EB0A1E;
+     }
+
+     /* .task-container{
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     } */
+
+     .task-container a{
+        margin: 5px 0;
+     }
+
+     .task-container a i:hover{
+         color: #EB0A1E;
+     }
+}

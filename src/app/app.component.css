@@ -1,0 +1,622 @@
+:root{
+    --primary-color: #EB0A1E;
+    --secondary-color: #0000;
+    --white: white;
+
+
+    /* Font Sizes */
+
+    --menu-fonts: 1.5rem;
+    --global-links: 1.5rem;
+    --Tittle: 2rem;
+    --inner-card-head-title: 1.6rem;
+    --inner-card-sub-title: 1.2rem;
+}
+
+
+
+.first{
+    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
+    /* background-color: black;  */
+}
+
+.navbar{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.nav-container{
+    position: relative;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -10%;
+}
+
+.logo, .menu ul{
+    display: flex;
+}
+
+.logo{
+    width: 40%;
+}
+
+#logo{
+    fill: white;
+}
+
+.logo a{
+    font-family: 'Toyota Type';
+    font-weight: bold;
+    font-size: 1.7rem;
+    color: white;
+    text-align: center;
+}
+
+.menu{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    /* margin-right: -200px; */
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    margin: 0 20px;
+}
+
+#menu-resp li i{
+   font-size: 1.1rem;
+   font-weight: 100;
+}
+
+#bar{
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+#search {
+    /* font-size: 1.7rem; */
+    cursor: pointer;
+}
+
+.gh-global{
+    width: 100%;
+    position: relative;
+    top: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gh-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;   
+}
+
+.gh-container label, span i, li a{
+    color: white;
+}
+
+.gh-button{
+    width: 100%;
+    height: 40px;
+    /* border-radius: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EB0A1E;
+    margin-top: 2px;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container p{
+    margin-right: 10px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.container label, i{
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+
+.container i{
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.container img{
+    width: 45px;
+    margin-right: 5px;
+}
+
+.gh-box{
+    width: 160px;
+    height: auto;
+}
+
+.global{
+   position: absolute;
+   display: flex;
+   width: 10rem;
+   top: -95%;
+   /* visibility: hidden; */
+   transition: 0.4s all ease;
+}
+
+.glo-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+}
+
+.glo-container a{
+    width: 100%;
+    color: var(--white);
+    padding: 7px 10px;
+    transition: 0.4s all ease;
+    font-size: 1.2rem;
+}
+
+
+
+.glo-container a:hover{
+    background-color: var(--white);
+    color: black;
+}
+
+#glo-list{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+
+
+.three-js{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    /* background-color: black; */
+    background-image: url(../assets/images/Toyota_beginning.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.gh-global{
+    position: absolute;
+    z-index: 2;
+    top: 90%;
+}
+
+.navbar{
+    position: absolute;
+    z-index: 3;
+}
+
+.search{
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    height: 20vh;
+    top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.search-container{
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.search-engine{
+    position: relative;
+    width: 50%;
+    /* height: 100%; */
+    /* margin-top: 20px; */
+    border-bottom: 5px solid #EB0A1E;
+    display: flex;
+    justify-content: last baseline;
+    align-items: last baseline;
+    top: 10%;
+}
+
+.search-container input{
+    width: 90%;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+.search-container button{
+    border: 0;
+    padding: 0.2rem;
+    background-color: white;
+    font-size: 1.4rem;
+}
+
+/* .gh-button:hover{
+    background-color: grey;
+} */
+
+/* .gh-button a:hover .global{
+    display: block;
+} */
+
+/* Menu Responsive Buttons */
+.responsive {
+    display: none;
+}
+
+
+/* .three-js video{
+        width: 100% !important;
+        height: 100% !important;
+}*/
+
+
+
+
+/* Menu Hover Dropdown */
+.menu .logo{
+    color: rgb(0, 0, 0);
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 70px;
+    padding-left: 110px;
+  }
+  
+  .menu ul li{
+      width: 100%;
+    display: flex;
+  }
+
+  .menu ul li a{
+    color: rgb(0, 0, 0);
+    display: block;
+    line-height: 70px;
+    font-size: 20px;
+    transition: .5s;
+  }
+  .menu ul ul li a{
+    color: rgb(255, 255, 255);
+    display: block;
+    line-height: 70px;
+    font-size: 20px;
+    transition: .5s;
+  }
+  .menu ul li a:hover,
+  .menu ul li a.active{
+    color: #EB0A1E;
+  }
+
+  .menu ul ul li a:hover,
+  .menu ul ul li a:active{
+      color: #EB0A1E;
+  }
+  
+  #titles:hover,
+  #titles a:active,
+  #title:hover,
+  #title a:active,
+  #titl:hover,
+  #titl a:active{
+      color: #EB0A1E;
+  }
+  #titles,
+  #title,
+  #titl{
+      color: white;
+  }
+  
+.menu ul ul{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 60%;
+    height: 40vh;
+    backdrop-filter: blur(40px);
+    background-color: rgba(0, 0, 0, 0.605);
+     position: absolute;
+     top: 95px;
+    border-top: 3px solid #EB0A1E;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.support{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    margin-top: -40px;
+}
+
+.sales li{
+    margin: 0;
+}
+
+.menu ul li:hover > ul{
+    width: 60%;
+    top: 75px;
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+  }
+
+  /* .menu ul ul li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    border-top: none;
+  } */
+
+  #support{
+    width: 60%;
+    display: flex;
+    /* justify-content:center; */
+    align-items: flex-start;
+    /* align-self: center; */
+    padding: 5px  10px;
+  }
+  
+
+  #support #title{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 20px;
+  }
+
+  #titles{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    margin-left: 4px;
+  }
+  #titl{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    margin-left: 30px;
+  }
+
+  /* #support i{
+    font-size: 1rem;
+  } */
+
+  .sup{
+    /* width: 100%; */
+    display: flex;
+    height: 20%;
+    /* justify-content: center; */
+    align-items: center;
+    margin-bottom: 40px;
+    /* margin-top: -10px; */
+    margin-left: 50px;
+  }
+
+  .sup i{
+    font-size: 1rem;
+    margin-top: -4px;
+  }
+
+  #sub-t{
+    display: flex;
+    align-items: center;
+    margin-bottom: -20px;
+  }
+
+  #sub-t a, i{
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+
+  .Services li{
+    font-size: 0.8rem;
+  }
+
+  .sales li span, .Services li span, .Spare-Parts li span{
+     font-size: 1rem;
+     margin-left: 20px;
+  }
+
+  .sales li a, .Services li a, .Spare-Parts li a{
+     font-size: 1rem;
+  }
+
+  .sales, .Services, .Spare-Parts{
+     align-items: flex-start;
+  }
+
+  .sales li, .Services li, .Spare-Parts li{
+     align-items: flex-start;
+     margin: -20px 0;
+  }
+
+  #about{
+    flex-direction: column;
+  }
+
+  .aboutt{
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
+  .abouttt{
+    width: 100%;
+  }
+  .menu ul ul li a{
+    line-height: 50px;
+  }
+  .menu ul ul ul{
+    border-top: none;
+  }
+  .menu ul ul ul li{
+    position: relative;
+    /* top: -70px;
+    left: 150px; */
+  }
+  /* .menu ul ul li a i{
+    margin-left: 45px;
+  } */
+/* Responsivity */
+
+@media  screen and (max-width: 500px) {
+    .logo {
+        margin-right: 20px;
+    }
+    .responsive{
+        width: 100%;
+        height: 100%;
+        visibility: visible;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .responsive ul{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        margin-left: 30px;
+    }
+
+    /* .responsive ul li{
+        margin: 0 0.7rem;
+    } */
+    .responsive ul li a{
+        color: black;
+        /* font-size: 2rem; */
+        margin: 0;
+    }
+
+    .responsive ul li span{
+        cursor: pointer;
+    }
+
+    .responsive ul li i{
+        color: black;
+        font-size: 1.5rem;
+    }
+
+    .menu #menu-resp{
+        display: none;
+    }
+
+    .navbar{
+        width: 100%;
+    }
+
+    .search-engine{
+        width: 82%;
+    }
+}
+
+
+@media  screen and (min-width: 540px) and (max-width: 1080px)  {
+    .logo {
+        margin-right: 20px;
+    }
+    .responsive{
+        width: 100%;
+        height: 100%;
+        visibility: visible;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .responsive ul{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+
+    /* .responsive ul li{
+        margin: 0 0.7rem;
+    } */
+    .responsive ul li a{
+        color: black;
+        /* font-size: 2rem; */
+        margin: 0;
+    }
+
+    .responsive ul li span{
+        cursor: pointer;
+    }
+
+    .responsive ul li i{
+        color: black;
+        font-size: 1.5rem;
+    }
+
+    .menu #menu-resp{
+        display: none;
+    }
+
+    .navbar{
+        width: 100%;
+    }
+
+    .search-engine{
+        width: 82%;
+    }
+}
+
+/* @media screen and (max-height: 100px) {
+    .first{
+        min-height: 100vh;
+        max-height: 100vh;
+    }
+} */

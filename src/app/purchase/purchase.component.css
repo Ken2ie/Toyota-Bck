@@ -1,0 +1,149 @@
+.purchase{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog{
+    width: 100%;
+    height: 100%;
+    /* margin-left: 17px; */
+}
+
+.blog h1{
+    font-size: 3rem;
+}
+
+.blog p{
+    font-size: 1.5rem;
+}
+
+.blog-picture{
+    padding: 13rem 22rem;
+    background-color: black;
+    margin-left: 70px;
+    margin-right: -9.6rem;
+    background-image: url(../../assets/images/toyota-engine.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 500px) {
+    .purchase{
+    height: auto;
+    margin: 100px 0;
+    }
+    .section-container{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .blog h1{
+        font-size: 2rem;
+    }
+    
+    .blog p{
+        font-size: 1rem;
+    }
+
+
+    .blog-picture{
+        display: none;
+        width: 100%;
+        height: 40vh;
+        margin: 20px 0;
+        /* margin-top: 20px; */
+        padding: 0;
+    }
+
+    .resp{
+        width: 100%;
+        height: 40vh;
+        background-image: url(../../assets/images/toyota-engine.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 40px 0;
+    }
+}
+
+@media  screen and (min-width: 540px) and (max-width: 1080px)  {
+    .purchase{
+    height: 70vh;
+    }
+    .section-container{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .blog h1{
+        font-size: 2.5rem;
+    }
+    
+    .blog p{
+        font-size: 1.2rem;
+    }
+
+
+    .blog-picture{
+        display: none;
+        width: 100%;
+        height: 70vh;
+        margin: 20px 0;
+        /* margin-top: 20px; */
+        padding: 0;
+    }
+
+    .resp{
+        width: 100%;
+        height: 70vh;
+        background-image: url(../../assets/images/toyota-engine.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 40px 0;
+    }
+
+}
+
+@media screen and (min-width: 550px) and (max-width: 1300px) {
+    /* .purchase{
+        height: 50vh;
+    }*/
+
+    .blog-picture{
+        padding: 15rem 16rem;
+        margin: 0;
+    }
+    /*.section-container{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .blog h1{
+        font-size: 2.5rem;
+    }
+    
+    .blog p{
+        font-size: 1.6rem;
+    }
+    .resp{
+        width: 100%;
+        height: 70vh;
+        background-image: url(../../assets/images/toyota-engine.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: -200px;
+        margin-bottom: 100px;
+    } */
+}

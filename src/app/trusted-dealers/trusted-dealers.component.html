@@ -1,0 +1,30 @@
+<div class="trusted-dealers">
+    <div class="container">
+        <div class="head">
+            <h2>Trusted Dealers</h2>
+        </div>
+        <div class="dealers">
+            <div class="dealer-container">
+                <select class="form-select" name="" id="select" #select  > <!--(change)="onSelected()", [(ngModel)]="deafaultSelection" --> 
+                    <option value=""  *ngFor="let region of regions"> {{ region.name }} </option>
+                </select>
+
+                <div class="region-dealers" *ngIf="dealersinSight">
+                       <ng-container class="dealing">
+                            <div class="dealers-container">
+                                <div class="dealer" *ngFor="let data of dealersinSight">
+                                    <span id="name"> {{ data.name }} </span>   
+                                    <a href="" id="location"><i class='bx bxs-map'></i> {{ data.location }}</a>
+                                    <span>Service:</span>
+                                    <span><i class='bx bx-check'></i>  {{ data.serviceOne }} </span>
+                                    <span><i class='bx bx-check-double'></i> {{ data.serviceTwo }} </span>
+                                    <span><i class='bx bx-check-double'></i> {{ data.serviceThree }} </span>
+                                    <div class="view"><a href="#" id="view">View</a></div>
+                                </div>
+                            </div>
+                       </ng-container>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

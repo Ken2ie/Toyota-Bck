@@ -1,0 +1,290 @@
+.new-models{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.section-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.new-head h2{
+  font-size: 3rem;
+}
+
+.new{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+.more-button{
+    margin: 20px 0;
+}
+
+.more-button a{
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.more-button a{
+    padding: 10px 30px;
+    background-color: #EB0A1E;
+    color: white;
+    font-size: 1rem;
+    font-weight: lighter; 
+    margin-right: 10px;
+}
+
+.more-button a:hover{
+    background-color: black;
+    transition: 0.4s all ease;
+}
+
+.more-button span{
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    height: 70vh;
+    margin: 30px 0;
+}
+.carOne{
+    background-image: url(https://www.motorbiscuit.com/wp-content/uploads/2021/11/Side-view-of-silver-2022-Toyota-RAV4-SE-Hybrid.jpg);
+    background-repeat: no-repeat;
+    background-size:  cover;
+    background-position: center;
+    /* background-color: #EB0A1E; */
+    padding: 1rem;
+}
+.carTwo{
+    background-image: url(https://media.ed.edmunds-media.com/toyota/rav4/2022/oem/2022_toyota_rav4_4dr-suv_base_s_oem_1_815.jpg);
+    background-repeat: no-repeat;
+    background-size:  cover;
+    background-position: center;
+    /* background-color: #EB0A1E; */
+    padding: 1rem;
+}
+/* .carTwo span p, .carThree span p{
+    color: white;
+} */
+.carThree{
+    background-image: url(https://www.motorbiscuit.com/wp-content/uploads/2021/11/Side-view-of-silver-2022-Toyota-RAV4-SE-Hybrid.jpg);
+    background-repeat: no-repeat;
+    background-size:  cover;
+    background-position: center;
+    /* background-color: #EB0A1E; */
+    padding: 1rem;
+}
+
+
+
+.three{
+    background-color: grey;
+    padding: 1rem;
+}
+
+.span{
+    grid-row-start: span 2;
+    margin-right: 20px;
+    margin-left: -9.7rem;
+}
+
+.span span{
+    margin-left: 139px;
+}
+
+.one{
+    margin-bottom: 20px;
+}
+
+.three {
+    position: relative;
+}
+
+.three span {
+    position: absolute;
+    padding: 1rem;
+    bottom: 0;
+    left: 0;
+
+}
+
+.three span h2{
+    padding: 0.2rem 1.5rem;
+    background-color: black;
+    color: white;
+}
+.three span p{
+    backdrop-filter: blur(25px);
+    background-color: #ffffff22;
+    /* border-radius: 2px; */
+    padding: 0.3rem;
+    color: black;
+}
+
+/* Display */
+
+.display{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+/* .dis{
+
+} */
+
+
+/* Responsiveness */
+@media screen and  (max-width: 378px){
+    .new-models{
+        height: 150vh;
+    }
+    .new-head h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .new-models{
+        height: auto;
+    }
+
+     .new-head h2{
+        font-size: 2rem;
+     }
+
+     .grid{
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0;
+        height: auto;
+     }
+
+     .container{
+        padding: 7rem;
+     }
+
+     .span{
+        margin: 0;
+        padding: 0;
+        grid-row-start: none;
+     }
+
+     .carOne{
+        background-image: url(https://www.motorbiscuit.com/wp-content/uploads/2021/11/Black-wheel-on-Cavalry-Blue-2022-Toyota-RAV4-XSE.jpg);
+        background-repeat: no-repeat;
+        background-size:  cover;
+        background-position: center;
+        /* background-color: #EB0A1E; */
+        padding: 7rem;
+        margin-bottom: 40px;
+     }
+
+     .one{
+        margin-bottom: 40px;
+     }
+
+     .span span{
+        margin: 0;
+        color: white;
+     }
+
+     .span span p{
+       color: white;
+     }
+
+     /* Display */
+
+
+     .section-container{
+        justify-content: space-evenly;
+     }
+}
+
+
+@media  screen and (min-width: 540px) and (max-width: 1080px)  {
+    .new-models{
+        height: 120vh;
+    }
+
+     .new-head h2{
+        font-size: 2.5rem;
+        margin: 20px 0;
+     }
+
+     .grid{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        height: auto;
+     }
+
+     .container{
+        padding: 7rem;
+     }
+
+     .span{
+        margin: 0;
+        padding: 0;
+        grid-row-start: none;
+     }
+
+     .carOne{
+        background-image: url(https://www.motorbiscuit.com/wp-content/uploads/2021/11/Black-wheel-on-Cavalry-Blue-2022-Toyota-RAV4-XSE.jpg);
+        background-repeat: no-repeat;
+        background-size:  cover;
+        background-position: center;
+        /* background-color: #EB0A1E; */
+        padding: 7rem;
+        margin-bottom: 40px;
+     }
+
+     .one{
+        margin-bottom: 40px;
+     }
+
+     .span span{
+        margin: 0;
+        color: white;
+     }
+
+     .span span p{
+       color: white;
+     }
+
+     /* Display */
+
+
+     .section-container{
+        justify-content: space-evenly;
+     }
+
+     .more-button{
+        margin: 50px 0;
+     }
+}

@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+    --primary-color: #EB0A1E;
+    --secondary-color: #0000;
+    --white: white;
+
+
+    /* Font Sizes */
+
+    --menu-fonts: 1.5rem;
+    --global-links: 1.5rem;
+    --Tittle: 2rem;
+    --inner-card-head-title: 1.6rem;
+    --inner-card-sub-title: 1.2rem;
+}
+@font-face {
+    font-family: 'Toyota Text';
+    src: url(../src/assets/fonts/toyotatext_rg.ttf);
+}
+
+*{
+    font-family: 'Toyota Text';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Resuable CSS */
+.section-container{
+    width: 80;
+}
