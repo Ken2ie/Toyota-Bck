@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -39,7 +40,8 @@ import { ThreeSComponent } from './three-s/three-s.component';
     NgtCanvas,
     NgtMesh,
     NgtBoxGeometry,
-    NgtMeshBasicMaterial
+    NgtMeshBasicMaterial,
+    HttpClientModule,
     ],
   providers: [],
   bootstrap: [AppComponent]

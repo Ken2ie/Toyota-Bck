@@ -1,52 +1,76 @@
 <div class="newsroom">
-    <div class="container">
-        <div class="header">
-            <h2>Newsroom</h2>
-        </div>
-        <div class="news">
-            <div class="new-deals">
-                <div class="head">
-                    <span>New Deals</span>
-                </div>
-                <div class="news-box">
-                    <div  class="news-container red">
-                        <img >
-                        <span><h3 id="card" style="background-color: black;">Details</h3> <p>Details Information</p></span>
-                        <!-- <div class="carousel-dot-container">
-                            <span></span>
-                        </div> -->
-                        <!-- <button *ngIf="controls" class="next-btn">
-                              <span (click)="onNextClick()"></span> 
-                        </button> -->
-                    </div>
-                </div>
-            </div>
-            <div class="new-deals">
-                <div class="head">
-                    <span>Sales</span>
-                </div>
-                <div class="news-box grid">
-                    <div class="news-container next forward" style="margin-right: 20px;">
-                        <span><h3 id="card" >Details</h3> <p>Details Information</p></span>
-                    </div>
-                    <div class="news-container red">
-                        <span><h3 class="black" id="card"  style="background-color: black;">Details</h3 > <p>Details Information</p></span>
-                    </div>
-                </div>
-            </div>
-            <div class="new-deals top">
-                <div class="head">
-                    <span>Promotions</span>
-                </div>
-                <div class="news-box grid">
-                    <div class="news-container red backward">
-                        <span><h3 style="background-color: black;" class="black" id="card">Details</h3> <p>Details Information</p></span>
-                    </div>
-                    <div class="news-container back">
-                        <span><h3 id="card" >Details</h3> <p>Details Information</p></span>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <div class="header">
+      <h2>Newsroom</h2>
     </div>
+    <div class="news">
+      <div class="new-deals">
+        <div class="head">
+          <span>New Deals</span>
+        </div>
+        <div class="news-box">
+          <div class="news-container">
+            <div class="gradient"></div>
+            <img #newsImage [src]="images[currentImageIndex]" alt="New Deal Image">
+            <div class="news-content">
+              <h3 class="news-title">Exclusive Car Deals</h3>
+              <p>Get up to 15% off on select Toyota models this season.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="new-deals">
+        <div class="head">
+          <span>Sales</span>
+        </div>
+        <div class="news-box grid">
+          <div class="news-container next forward" style="margin-right: 20px">
+            <div class="gradient"></div>
+            <img src="{{newsroom[1].items[0].image}}" alt="">
+            <span class="news-content"
+              ><h3 id="card">{{newsroom[1].items[0].title}}</h3>
+              <p>{{newsroom[1].items[0].description}}</p></span
+            >
+          </div>
+          <div class="news-container red">
+            <div class="gradient"></div>
+            <img src="{{newsroom[1].items[1].image}}" alt="">
+            <span class="news-content"
+              ><h3 class="black" id="card" style="background-color: black">
+                {{newsroom[1].items[1].title}}
+              </h3>
+              <p>{{newsroom[1].items[1].description}}</p></span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="new-deals top">
+        <div class="head">
+          <span>Promotions</span>
+        </div>
+        <div class="news-box grid">
+          <div class="news-container red backward">
+            <div class="gradient"></div>
+            <img src="{{newsroom[2].items[0].image}}" alt="">
+            <span class="news-content"
+              ><h3 style="background-color: black" class="black" id="card">
+                {{newsroom[2].items[0].title}}
+              </h3>
+              <p>{{newsroom[2].items[0].description}}</p></span
+            >
+          </div>
+          <div class="news-container back">
+            <div class="gradient"></div>
+            <img src="https://global.toyota/pages/news/images/2023/11/02/1330/20231102_01_kv_w1920.jpg" alt="">
+            <span class="news-content"
+              ><h3 id="card">{{newsroom[2].items[1].title}}</h3>
+              <p>
+                {{newsroom[2].items[1].description}}
+              </p></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

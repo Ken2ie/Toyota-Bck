@@ -34,7 +34,7 @@
 
 .nav-container{
     position: relative;
-    width: 90%;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -64,11 +64,13 @@
 
 .menu{
     height: 100%;
-    width: 60%;
+    width: 100%;
+    max-inline-size: 60rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: white;
+    position: relative;
     /* margin-right: -200px; */
 }
 
@@ -399,12 +401,15 @@
   } */
 
   #support{
-    width: 60%;
+    width: 100%;
     display: flex;
+    max-inline-size: 60rem;
     /* justify-content:center; */
     align-items: flex-start;
     /* align-self: center; */
-    padding: 5px  10px;
+    padding: 5px  5px;
+    position: absolute;
+    left: 0;
   }
   
 
@@ -510,6 +515,66 @@
   } */
 /* Responsivity */
 
+@media screen and (max-width: 1300px) {
+    .menu #menu-resp{
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media  screen and (min-width: 500px) and (max-width: 1080px)  {
+    .logo {
+        /* margin-right: 20px; */
+    }
+    .responsive{
+        width: 100%;
+        height: 100%;
+        visibility: visible;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .responsive ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        gap: 30px;
+    }
+    
+    .responsive ul li{
+        width: auto;
+        margin: 0;
+    }
+    .responsive ul li a{
+        color: black;
+        /* font-size: 2rem; */
+        margin: 0;
+    }
+    
+    .responsive ul li span{
+        cursor: pointer;
+    }
+    
+    .responsive ul li i{
+        color: black;
+        font-size: 1.5rem;
+    }
+    
+    .menu #menu-resp{
+        display: none;
+    }
+    
+    .navbar{
+        width: 100%;
+    }
+    
+    .search-engine{
+        width: 82%;
+    }
+}
+
 @media  screen and (max-width: 500px) {
     .logo {
         margin-right: 20px;
@@ -523,100 +588,49 @@
         align-items: center;
     }
     .responsive ul{
-        width: 100%;
         height: auto;
         display: flex;
         justify-content: center;
         align-items: baseline;
-        margin-left: 30px;
+        gap: 30px;
     }
 
     /* .responsive ul li{
         margin: 0 0.7rem;
-    } */
-    .responsive ul li a{
-        color: black;
-        /* font-size: 2rem; */
-        margin: 0;
+        } */
+        .responsive ul li a{
+            color: black;
+            /* font-size: 2rem; */
+            margin: 0;
+        }
+        
+        .responsive ul li span{
+            cursor: pointer;
+        }
+        
+        .responsive ul li i{
+            color: black;
+            font-size: 1.5rem;
+        }
+        
+        .menu #menu-resp{
+            display: none;
+        }
+        
+        .navbar{
+            width: 100%;
+        }
+        
+        .search-engine{
+            width: 82%;
+        }
     }
+    
+    
 
-    .responsive ul li span{
-        cursor: pointer;
-    }
-
-    .responsive ul li i{
-        color: black;
-        font-size: 1.5rem;
-    }
-
-    .menu #menu-resp{
-        display: none;
-    }
-
-    .navbar{
-        width: 100%;
-    }
-
-    .search-engine{
-        width: 82%;
-    }
-}
-
-
-@media  screen and (min-width: 540px) and (max-width: 1080px)  {
-    .logo {
-        margin-right: 20px;
-    }
-    .responsive{
-        width: 100%;
-        height: 100%;
-        visibility: visible;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .responsive ul{
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: baseline;
-    }
-
-    /* .responsive ul li{
-        margin: 0 0.7rem;
-    } */
-    .responsive ul li a{
-        color: black;
-        /* font-size: 2rem; */
-        margin: 0;
-    }
-
-    .responsive ul li span{
-        cursor: pointer;
-    }
-
-    .responsive ul li i{
-        color: black;
-        font-size: 1.5rem;
-    }
-
-    .menu #menu-resp{
-        display: none;
-    }
-
-    .navbar{
-        width: 100%;
-    }
-
-    .search-engine{
-        width: 82%;
-    }
-}
-
-/* @media screen and (max-height: 100px) {
-    .first{
-        min-height: 100vh;
-        max-height: 100vh;
-    }
+    /* @media screen and (max-height: 100px) {
+        .first{
+            min-height: 100vh;
+            max-height: 100vh;
+            }
 } */

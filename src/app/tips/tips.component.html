@@ -3,45 +3,14 @@
         <div class="head">
           <h2>Tips</h2>
         </div>
-        <div class="vehicle-usage">
+        <div *ngFor="let tip of tips" class="vehicle-usage">
             <div class="subtitle">
-                 <span>Vehicle Usage</span>
+                 <span>{{tip.category}}</span>
             </div>
             <div class="tip">
-                <div class="container">
+                <div *ngFor="let tipData of tip.tips" class="container">
                     <div class="words">
-                        <p>Tips: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium aut cum distinctio reprehenderit doloremque et, sequi corporis beatae laborum cupiditate qui ad facere possimus, commodi harum est neque dicta sapiente?</p>
-                    </div>
-                    <div class="learn-more"><a href="#">Learn More</a></div>
-                </div>
-                <div class="container">
-                    <div class="words">
-                        <p>Tips: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium aut cum distinctio reprehenderit doloremque et, sequi corporis beatae laborum cupiditate qui ad facere possimus, commodi harum est neque dicta sapiente?</p>
-                    </div>
-                    <div class="learn-more"><a href="#">Learn More</a></div>
-                </div>
-                <div class="container">
-                    <div class="words">
-                        <p>Tips: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium aut cum distinctio reprehenderit doloremque et, sequi corporis beatae laborum cupiditate qui ad facere possimus, commodi harum est neque dicta sapiente?</p>
-                    </div>
-                    <div class="learn-more"><a href="#">Learn More</a></div>
-                </div>
-            </div>
-        </div>
-        <div class="parts-mentainance">
-            <div class="subtitle">
-                <span>Parts and Maintainance</span>
-           </div>
-            <div class="tip">
-                <div class="container">
-                    <div class="words">
-                        <p>Tips: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium aut cum distinctio reprehenderit doloremque et, sequi corporis beatae laborum cupiditate qui ad facere possimus, commodi harum est neque dicta sapiente?</p>
-                    </div>
-                    <div class="learn-more"><a href="#">Learn More</a></div>
-                </div>
-                <div class="container">
-                    <div class="words">
-                        <p>Tips: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium aut cum distinctio reprehenderit doloremque et, sequi corporis beatae laborum cupiditate qui ad facere possimus, commodi harum est neque dicta sapiente?</p>
+                        <p>{{tipData}}</p>
                     </div>
                     <div class="learn-more"><a href="#">Learn More</a></div>
                 </div>
