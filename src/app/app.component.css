@@ -522,6 +522,43 @@
     }
 }
 
+/* Responsive Menu */
+@media screen and (max-width: 1080px) {
+    .menu #menu-resp {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      z-index: 1000;
+    }
+  
+    .menu #menu-resp.active {
+      display: flex;
+    }
+  
+    .menu #menu-resp li {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .menu #menu-resp li a {
+      padding: 10px;
+      display: block;
+    }
+  
+    .menu #menu-resp li ul {
+      position: static;
+      display: none;
+    }
+  
+    .menu #menu-resp li:hover ul {
+      display: block;
+    }
+  }
+
 @media  screen and (min-width: 500px) and (max-width: 1080px)  {
     .logo {
         /* margin-right: 20px; */

@@ -12,6 +12,7 @@ export class AppComponent {
   title = 'ToyotaBck';
 
   isSearchOpen: boolean = false;
+  isMobileMenuOpen = false;
 
   openSearch(): void {
     this.isSearchOpen = !this.isSearchOpen;
@@ -23,6 +24,14 @@ export class AppComponent {
 
   openGlobal(): void {
     this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  toggleMobileMenu(): void {
+    this.isMobileMenuOpen = !this.isMobileMenuOpen;
+  }
+  
+  closeMobileMenu(): void {
+    this.isMobileMenuOpen = false;
   }
 
   // NewsRoom
